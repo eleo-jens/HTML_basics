@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--l'entete c'est la configuration, comme la liste des fonctionnalites options d'une voiture-->
+    <head>
+        <!-- balise meta de configuration qui prend des attributs charset c'est l'encodage des caracteres qui est anglophone et francophone: caracteres pour langues latines-->
+        <meta charset="UTF-8">
+        <!-- gere la comptabilite entre internet explorer et edge explorer, moins utile -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- la largeur de la page sera egale a la configuration du device sur lequel on est, va adopter la taille en pixel a la taille initiale de l'ecran -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- obligatoire -->
+        <title>Document</title>
+    </head>
+    <!--Une marge s'applique sur le body, c'est le style du navigateur-->
+    <body>
+        <h1>Voyager en Inde</h1>
+        <h2>Second titre</h2>
+        <h3>Troisieme titre</h3>
+        <h4>Quatrieme titre</h4>
+        <h5>Cinquieme titre</h5>
+        <h6>Sixieme titre</h6>
+
+        <img alt="Image d'un paysage en Inde" src="./assets/images/india.jpg">Inde</img>
+
+        <p>
+            Lorem <strong>, dolor</strong> sit<br> amet consectetur adipisicing elit. Soluta, mollitia corporis. Provident libero ratione, est sapiente quae cum temporibus exercitationem!
+        </p>
+        <p>
+            Lorem <em>ipsum</em>, dolor sit amet <mark>consectetur</mark> adipisicing elit. Soluta, mollitia corporis. Provident libero ratione, est sapiente quae cum temporibus exercitationem!
+        </p>
+        <!--Anchor, une ancre, toutes la pages parmi lesquelles on voyage sont des a, donc utile pour la navigation, l'attribut href est obligatoire-->
+        <a href="http://www.google.be">Lien vers google</a>
+        <!-- Ici on navigue a l'interieur de notre page, on utilise le lien relatif, avec un ./ on remonte dans les dossiers qui sont au meme niveau-->
+        <a href="./views/contact.html">Vers la page contact</a>
+        <a href="./assets/documents/Html_CSS.pdf">Lien vers le pdf du cours</a>
+        <!-- lien qui mene vers une image, ce qui est different de <img src=-->
+        <a href="./assets/images/india.jpg">Lien vers une image</a><br>
+    
+        <p>Unorderd list (triple epaisseur de mise en style: bullet, circle, square)</p>
+        <ul>
+            <li>A propos</li>
+            <li>Projets</li>
+            <ul>
+                <li>PHP</li>
+                <li>Python</li>
+            </ul>
+        </ul>
+        <p>Orderd list - pas de plus value car on peut changer le style (CSS: list-style-type) de ul en décimal par exemple</p>
+        <ol>
+            <li>Je une liste</li>
+            <li>suis</li>
+            <li>ordonnée</li>
+        </ol>
+    </body>
+</html>

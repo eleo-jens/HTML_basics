@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <!--../ ca signifie revient vers le parent de page de contact, ici on va dans le dossier qui est au dessus du dossier parent-->
+        <h1>Page de contact</h1>
+       
+        <!-- Le formulaire est le seul moyen de communication et d'interactivite entre le client et le navigateur-->
+        <!-- form a besoin de deux attributs obligatoires, methode specifie la maniere de communication poru envoyer le formulaire sur le serveur (get ou post), l'action c'est l'endroit ou est envoye le formulaire-->
+        <form method="POST" action="">
+            <!-- il existe 23 types differents : il faut l'attribut type et name (name et value), si on met pas de name ca ne s'affiche pas. Le place holder est une indication preremplie-->
+            <!--ici on lie le label avec l'input, ce qui permet en mettant for et id, de mettre le curseur dans l'input quand on clique sur "Prenom" dans le formulaire-->
+            <label for="firstname">Prenom : </label><input required name ="firstName" id="firstname" type="text" placeholder="Votre prenom"><br>
+            <label>Mot de passe : </label><input required type="password" name="password" placeholder="Votre mot de passe"><br>
+            
+            <!-- le label est une etiquette que je peux donner a tous mes inputs, je n'ai pas le choix d'en mettre pour le type radio et checkbox-->
+            <label>Homme</label><input type="radio" value="H" name="gender"><br>
+            <label>Femme</label><input type="radio" value="F" name="gender"><br>
+            <label>Autre</label><input type="radio" value="NC" name="gender"><br>
+            
+            <!-- dans radio on ne peut en cocher que un seul par name, mais pour les checkbox, par un meme name on peut en selectionner plusieurs-->
+            <label>PS</label><input type="checkbox" value="Playstation" name="console"><br>
+            <label>PC</label><input type="checkbox" Value="Personal computer" name="console"><br>
+            <label>Switch</label><input type="checkbox" value="Nintendo Switch" name="console"><br>
+            
+            <!-- select: balise de paire qui prend des balises de paires option qui prend le texte affiche: cree une liste de choix deroulant-->
+            <select name="age">
+                <!-- ici on met un disabled pour faire en sorte que la premiere option vide ne puisse pas etre cochee-->
+                <option disabled></option>
+                <option value="-12">Moins de 12 ans</option>
+                <option value="12-18">Plus de 12 ans et moins de 18 ans</option>
+                <option value="+18">Plus de 12 ans</option>
+            </select>
+
+             <!-- select avec multiple permet de selectionner plusieurs dans la liste deroulante-->
+            <select multiple name="tech">
+                <!-- ici on met un disabled pour faire en sorte que la premiere option vide ne puisse pas etre cochee-->
+                <option disabled></option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="C#">C#</option>
+                <option value="Node">Node</option>
+            </select>
+        </form>
+        <a href="../index.html">Vers l'accueil</a>
+    </body>
+</html>
